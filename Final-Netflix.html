@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Final</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            font-family: sans-serif;
+            color: white;
+
+        }
+
+        body {
+            background-color: rgb(55, 55, 55);
+        }
+
+        /* ------- (Header) Section 1 -------- */
+
+        section.sec1 {
+            border: 2px solid;
+            border-color: transparent;
+            height: 700px;
+            width: 100%;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), 
+            url(./Netflix-Background.jpg);
+            background-size: cover;
+
+
+        }
+
+        img.logo ul {
+            vertical-align: baseline;
+        }
+
+        /* ------- Navigation -------- */
+
+        nav {
+            border: 2px solid;
+            border-color: transparent;
+            margin: 2% auto;
+            display: flex;
+
+        }
+
+        nav img.logo {
+            border: 1px solid;
+            border-color: transparent;
+            height: 60px;
+            width: 180px;
+            margin-left: 10%;
+            padding: 5px;
+
+
+        }
+
+        nav img,
+        ul {
+            display: inline-block;
+
+        }
+
+        nav ul {
+            border: 2px solid;
+            border-color: transparent;
+            margin-left: 50%;
+
+        }
+
+        nav ul li {
+            /* border: 2px solid orange; */
+            display: inline-block;
+            margin-left: 15px;
+
+        }
+
+        nav li a {
+            /* border: 2px solid orange; */
+            padding: 9px 23px;
+            background-color: red;
+            color: white;
+            border-radius: 10px;
+        }
+
+        nav li a:hover {
+            background-color: rgba(255, 0, 0, 0.774);
+        }
+
+        li select#Lang {
+            padding: 8px 23px;
+            background-color: transparent;
+            color: white;
+            border-radius: 10px;
+        }
+
+        /* ------- Header Content -------- */
+
+        div.header-content {
+            position: absolute;
+            top: 40%;
+            left: 10%;
+            color: white;
+            text-align: center;
+
+        }
+
+        .header-content h1 {
+            color: white;
+            font-weight: 600;
+            line-height: 70px;
+            font-size: 50px;
+            margin-bottom: 23px;
+            border-radius: 8px;
+        }
+
+        .header-content h3,
+        p {
+            font-weight: 400;
+            margin-bottom: 25px;
+            font-size: 25px;
+
+        }
+
+        form input {
+            padding: 19px 43px 10px;
+            width: 500px;
+            background-color: transparent;
+            border-radius: 8px;
+            border-color: white;
+            color: white;
+
+
+        }
+
+        form button {
+            padding: 10px 43px;
+            background-color: red;
+            color: white;
+            font-size: x-large;
+            border-radius: 8px;
+            margin-left: 15px;
+        }
+
+        /* -------- (Middele Section) Section 2 --------- */
+
+        section.sec2 {
+            height: 500px;
+            width: 100%;
+            border: 1px solid transparent;
+            background-color: black;
+            margin-top: 5px;
+            display: flex;
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
+
+        }
+
+        section.sec2 div {
+            height: 100%;
+            width: 50%;
+            border: 1px solid;
+            float: right;
+            border-color: black;
+            color: white;
+        }
+
+        section.sec2 div h1 {
+            border: 1px solid black;
+            width: 500px;
+            margin: 20% auto;
+            font-size: 39px;
+            font-weight: 900;
+        }
+
+        section.sec2 div h1 p {
+            font-size: 19px;
+            font-weight: none;
+            margin-top: 25px;
+            font-weight: 200;
+        }
+
+        section.sec2 div.gif {
+            border: 1px solid transparent;
+
+
+        }
+
+        section.sec2 img {
+            border: 1px solid transparent;
+            margin: 13.4% 0px 0px 30%;
+            width: 479px;
+        }
+
+        /* -------- (Middele Section - 1) Section 2 --------- */
+
+        #bgimg .text {
+            background-image: url(./netflix/images/feature-1.png);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+
+
+        /* ----- (FAQ) section 6 ----- */
+
+        section.sec6 {
+            border: 1px solid;
+            height: fit-content;
+            width: 100%;
+            background-color: black;
+            font-size: 23px;
+            margin-top: 5px;
+            border-color: transparent;
+        }
+
+        .sec6 details:hover {
+            background-color: rgb(61, 60, 60);
+        }
+
+        section.sec6 h1 {
+            font-size: 32px;
+            font-weight: 700;
+            text-align: center;
+            padding: 2%;
+        }
+
+        .sec6 details {
+            border: 2px solid rgb(55, 55, 55);
+            width: 75%;
+            margin: 8px auto;
+            background-color: rgb(41, 40, 40);
+        }
+
+        .sec6 summary {
+            border: 2px solid black;
+            padding: 24px;
+            margin-bottom: 1px;
+
+        }
+
+        .sec6 details p {
+            padding: 2%;
+        }
+
+        section.sec6 p {
+            font-weight: 400;
+            margin-bottom: 25px;
+            font-size: 25px;
+
+        }
+
+        form input {
+            padding: 8px 43px 10px;
+            width: 500px;
+            background-color: transparent;
+            border-radius: 8px;
+            border-color: white;
+            color: white;
+            font-size: x-large;
+        }
+
+        form button {
+            padding: 10px 43px;
+            background-color: red;
+            color: white;
+            font-size: x-large;
+            border-radius: 8px;
+            margin-left: 15px;
+        }
+
+        form button:hover {
+            background-color: rgba(255, 0, 0, 0.728);
+        }
+
+        div.rgs {
+            border: 1px solid transparent;
+            width: 60%;
+            margin: 50px auto;
+
+        }
+
+        /* ------ (Footer) section 7 ------  */
+
+        section.sec7#footer {
+            border: 2px solid;
+            border-color: transparent;
+            height: 400px;
+            background-color: black;
+            margin-top: 5px;
+        }
+
+        .sec7 div {
+            border: 2px solid;
+            border-color: transparent;
+            margin: 0px auto;
+            height: 100%;
+            width: 70%;
+        }
+
+        .footer ul {
+            border: 2px solid;
+            border-color: transparent;
+            width: fit-content;
+            display: inline-block;
+            margin: 0px 4%;
+            padding: 2%;
+            vertical-align: top;
+            list-style-type: none;
+            text-decoration: underline;
+
+        }
+
+        .footer li a {
+            line-height: 2;
+
+
+        }
+
+        .footer h3 {
+            border: 1px solid;
+
+            margin: 4% 0px 0px 6%;
+            border-color: transparent;
+            width: fit-content;
+
+        }
+
+        .footer select {
+            padding: 2% 20%;
+            border-color: white;
+            margin: 20% auto;
+            font-size: medium;
+            background-color: transparent;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- /* -------- (Header) Section 1 --------- */ -->
+
+    <section class="sec1">
+        <nav>
+            <img class="logo" src="./netflix/images/logo.png" alt="">
+            <ul>
+                <li class="option">
+                    <select name="" id="Lang">
+                        <option value="">English</option>
+                        <option value="">Hindi</option>
+                    </select>
+                </li>
+                <li class="signin"><a href="#">Sign In</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-content">
+            <h1>Enjoy big movies, hit series and more from ₹ 149.</h1>
+            <h3>Join today. Cancel anytime.</h3>
+            <p>Ready to watch? Enter your email to create or restart your membership.</p>
+            <form class="email">
+                <input type="Email" placeholder="Email Address">
+                <button class="btn" type="submit">Get Started > </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- /* -------- (Middele Section  1) Section 2 --------- */ -->
+
+
+    <section class="sec2" id="bgimg">
+        <div class="text">
+            <img src="./netflix//images/H95B.gif" alt="">
+        </div>
+        <div class="gif">
+            <h1>Download your shows to watch offline
+                <p>Save your favourites easily and always have something to watch.</p>
+            </h1>
+        </div>
+    </section>
+
+    <!-- /* -------- (Middele Section Stranger-Things 2) Section 2 --------- */ -->
+
+    <section class="sec2" id="StrangerThing">
+        <div class="text">
+            <h1>Download your shows to watch offline
+                <p>Save your favourites easily and always have something to watch.</p>
+            </h1>
+        </div>
+        <div class="gif">
+            <img src="./netflix//images/feature-2.png" alt="">
+        </div>
+    </section>
+
+    <!-- /* -------- (Middele Section Watch-Everywhere 3) Section 2 --------- */ -->
+
+    <section class="sec2" id="Watch-Everywhere">
+        <div class="text">
+            <img src="./netflix//images/feature-3.png" alt="">
+        </div>
+        <div class="gif">
+            <h1>Watch everywhere
+                <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+            </h1>
+        </div>
+    </section>
+
+    <!-- /* -------- (Middele Section Kids 4) Section 2 --------- */ -->
+
+    <section class="sec2" id="Kids">
+        <div class="text">
+            <h1>Create profiles for kids
+                <p>Send children on adventures with their favourite characters in a space made just
+                     for them—free with your membership.</p>
+            </h1>
+        </div>
+        <div class="gif">
+            <img src="./netflix//images/feature-4.png" alt="">
+        </div>
+    </section>
+
+    <!-- /* -------- (FAQ) Section 6 --------- */ -->
+
+    <section class="sec6">
+        <h1>Frequently Asked Questions</h1>
+
+        <details class="que1">
+            <summary>What is Netflix ?</summary>
+            <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime,
+                documentaries and more – on thousands of internet-connected devices.
+                <br><br>
+
+                You can watch as much as you want, whenever you want, without a single ad – all for one low monthly
+                price. There's always something new to discover, and new TV shows and movies are added every week!
+            </p>
+        </details>
+
+        <details class="que2">
+            <summary>How much does Netflix cost ?</summary>
+            <p>Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed
+                monthly fee. Plans range from ₹ 149 to ₹ 649 a month. No extra costs, no contracts.</p>
+        </details>
+        <details class="que3">
+            <summary>Where can I watch ?</summary>
+            <p>Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com
+                from your personal computer or on any internet-connected device that offers the Netflix app, including
+                smart TVs, smartphones, tablets, streaming media players and game consoles.
+                <br><br>
+                You can also download your favourite shows with the iOS, Android, or Windows 10 app. Use downloads to
+                watch while you're on the go and without an internet connection. Take Netflix with you anywhere.
+            </p>
+        </details>
+        <details class="que4">
+            <summary>Wow do I Cancel?</summary>
+            <p>Netflix is flexible. There are no annoying contracts and no commitments. You can easily cancel your
+                account online in two clicks. There are no cancellation fees – start or stop your account anytime.
+            </p>
+        </details>
+        <details class="que5">
+            <summary>What Can I watch on Netflix ?</summary>
+            <p>Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix
+                originals, and more. Watch as much as you want, anytime you want.
+            </p>
+        </details>
+        <details class="que6">
+            <summary>Is Netflix good for kids?</summary>
+            <p>The Netflix Kids experience is included in your membership to give parents control while kids enjoy
+                family-friendly TV shows and films in their own space.
+                <br><br>
+                Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of
+                content kids can watch and block specific titles you don’t want kids to see.
+            </p>
+        </details>
+
+        <div class="rgs">
+            <p>Ready to watch? Enter your email to create or restart your membership.</p>
+            <form class="email">
+                <input type="Email" placeholder="Email Address">
+                <button class="btn" type="submit">Get Started > </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- /* -------- (Footer) Section 7 --------- */ -->
+
+    <section class="sec7" id="footer">
+        <div class="footer">
+            <h3>Questions? Call 000-800-919-1694</h3>
+            <ul>
+                <li><a href="">FAQ</a></li>
+                <li><a href="">Investor Relations</a></li>
+                <li><a href="">Privacy</a></li>
+                <li><a href="">Speed Test</a></li>
+                <li><a href="">
+                        <select name="" id="">
+                            <option value="">English</option>
+                            <option value="">Hindi</option>
+                        </select>
+                    </a></li>
+                <li><a>Netflix India</a></li>
+            </ul>
+            <ul>
+                <li><a href="">Help Centre</a></li>
+                <li><a href="">Jobs</a></li>
+                <li><a href="">Cookie Preferences</a></li>
+                <li><a href="">Legal Notices</a></li>
+            </ul>
+            <ul>
+                <li><a href="">Account</a></li>
+                <li><a href="">Ways to Watch</a></li>
+                <li><a href="">Corporate Information</a></li>
+                <li><a href="">Only on Netflix</a></li>
+            </ul>
+            <ul>
+                <li><a href="">Media Centre</a></li>
+                <li><a href="">Terms of Use</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+
+        </div>
+    </section>
+</body>
+
+</html>
